@@ -1,0 +1,27 @@
+{
+    "name": "tomb",
+    "displayName": "vscode-tomb",
+    "description": "Phantasma TOMB smart contract language",
+    "version": "0.0.1",
+    "publisher": "phantasmaio",
+    "repository": "",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tomb",
+            "aliases": ["TOMB", "tomb"],
+            "extensions": [".tomb",".tmb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tomb",
+            "scopeName": "source.tomb",
+            "path": "./syntaxes/tomb.tmLanguage"
+        }]
+    }
+}
